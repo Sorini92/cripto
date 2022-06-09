@@ -40,6 +40,7 @@ export default function Transactions() {
             .then(() => setPage(page + 1))
             .then(() => setProcess('confirmed'))
             .then(() => setHandle(false));
+            
     }
 
     const onRequestById = () => {
