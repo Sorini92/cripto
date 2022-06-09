@@ -1,0 +1,59 @@
+.MuiTableHead-root {
+    background-color: rgb(228, 227, 227);
+}
+ 
+ .MuiTableContainer-root {
+     box-shadow: none !important;
+}
+ 
+.tablelink {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+    color: blue;
+    font-size: 12px;
+}
+
+.transaction {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &__id {
+        font-size: 20px;
+        color: grey;
+        margin-right: 10px;
+    }
+    &__value {
+        font-size: 20px;
+    }
+    &__img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 46px;
+    &__item {
+        color: grey;
+        margin-bottom: 10px;
+    }
+}
+
+.transport {
+    height: 46px;
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        color: grey;
+        margin-bottom: 10px;
+        width: 500px;
+    }
+}

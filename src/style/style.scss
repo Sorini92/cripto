@@ -1,0 +1,50 @@
+.app {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+    position: relative;
+    .bg-decoration {
+        position: absolute;
+        right: -174px;
+        bottom: -70px;
+        z-index: -1;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: 30px;
+    &__input {
+        border: none;
+        background-color: rgb(250, 245, 245);
+        width: 320px;
+        height: 30px;
+        align-self: center;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-bottom: 0;
+    }
+    &__line {
+        opacity: 0.3;
+    }
+    &__wrapper {
+        height: 30px;
+        position: relative;
+    }
+    &__btn {
+        position: absolute;
+        right: 13px;
+        top: 7px;
+        text-decoration: none;
+        border: none;
+        background-color: rgb(250, 245, 245);
+        color: blue;
+        cursor: pointer;
+    }
+    &__text {
+        font-size: 28px;
+        line-height: 0;
+    }
+}

@@ -1,0 +1,44 @@
+.tabs {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    &__link {
+        margin-right: 25px;
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    &__input {
+        border: none;
+        background-color: rgb(250, 245, 245);
+        width: 320px;
+        height: 30px;
+        align-self: center;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-bottom: 0;
+    }
+    &__line {
+        opacity: 0.3;
+    }
+    &__wrapper {
+        height: 30px;
+        position: relative;
+    }
+    &__btn {
+        position: absolute;
+        right: 13px;
+        top: 7px;
+        text-decoration: none;
+        border: none;
+        background-color: rgb(250, 245, 245);
+        color: blue;
+        cursor: pointer;
+    }
+}

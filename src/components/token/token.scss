@@ -1,0 +1,40 @@
+.MuiTableHead-root {
+    background-color: rgb(228, 227, 227);
+}
+ 
+ .MuiTableContainer-root {
+     box-shadow: none !important;
+}
+ 
+.tablelink {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+    color: blue;
+    font-size: 12px;
+}
+
+.tokenWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.token__id {
+    font-size: 20px;
+    color: grey;
+    margin-right: 10px;
+}
+
+.token__value {
+    font-size: 20px;
+}
+
+.token__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
