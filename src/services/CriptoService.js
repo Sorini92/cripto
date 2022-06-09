@@ -5,8 +5,8 @@ const useCriptoService = () => {
 
     const _apiBase = 'https://api.blockchain-facade.dev.metal-rabbit.net/explorer/';
 
-    const getTransactions = async () => {
-        const res = await request(`${_apiBase}transactions`);
+    const getTransactions = async (page) => {
+        const res = await request(`${_apiBase}transactions?page=${page}`);
         return res.data.map(_transformData)
     }
 

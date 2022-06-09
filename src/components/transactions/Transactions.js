@@ -20,6 +20,7 @@ import './transactions.scss';
 export default function Transactions() {
 
     const [id, setId] = useState('');
+    const [page, setPage] = useState(0);
     const [transactionsList, setTransactionsList] = useState([]);
     const [transaction, setTransaction] = useState([]);
     const [newItemLoading, setNewItemLoading] = useState(false);
@@ -34,8 +35,9 @@ export default function Transactions() {
 
     const onRequest = (initial) => {
         initial ? setNewItemLoading(false) : setNewItemLoading(true);
-        getTransactions()
+        getTransactions(page)
             .then(onTransactionsListLoaded)
+            .then(() => setPage(page + 1))
             .then(() => setProcess('confirmed'))
             .then(() => setHandle(false));
     }
