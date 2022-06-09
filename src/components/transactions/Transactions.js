@@ -151,7 +151,7 @@ export default function Transactions() {
                 </Table>
             </TableContainer>
             {transactionsList.length === 0 && handle ? <div className='ups'>Ups, nothing found</div> : null}
-            {transactionsList.length > 1 ? <button className='tablelink' disabled={newItemLoading} onClick={() => onRequest()}>LOAD MORE TRANSACTIONS</button> : null}
+            {transaction.length !== 1 ? <button className='tablelink' disabled={newItemLoading} onClick={() => onRequest()}>LOAD MORE TRANSACTIONS</button> : null}
         </>
     );
 }

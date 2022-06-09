@@ -147,7 +147,7 @@ export default function Gsc() {
 			</Table>
 			</TableContainer>
             {gscList.length === 0 && handle ? <div className='ups'>Ups, nothing found</div> : null}
-            {gscList.length > 1 ? <button className='tablelink' disabled={newItemLoading} onClick={() => onRequest()}>LOAD MORE GSC'S</button> : null}
+            {gsc.length !== 1 ? <button className='tablelink' disabled={newItemLoading} onClick={() => onRequest()}>LOAD MORE GSC'S</button> : null}
 		</>
 	);
 }

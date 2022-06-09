@@ -160,7 +160,7 @@ export default function Bullions() {
 			</Table>
 			</TableContainer>
             {bullionsList.length === 0 && handle ? <div className='ups'>Ups, nothing found</div> : null}
-            {bullionsList.length > 1 ? <button className='tablelink' disabled={newItemLoading} onClick={() => onRequest()}>LOAD MORE BULLIONS</button> : null}
+            {bullion.length !== 1 ? <button className='tablelink' disabled={newItemLoading} onClick={() => onRequest()}>LOAD MORE BULLIONS</button> : null}
 		</>
   	);
 }
