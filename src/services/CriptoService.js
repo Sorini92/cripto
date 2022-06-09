@@ -10,13 +10,13 @@ const useCriptoService = () => {
         return res.data.map(_transformData)
     }
 
-    const getBullions = async () => {
-        const res = await request(`${_apiBase}bullions`);
+    const getBullions = async (page) => {
+        const res = await request(`${_apiBase}bullions?page=${page}`);
         return res.data.map(_transformData)
     }
 
-    const getGsc = async () => {
-        const res = await request(`${_apiBase}gsc`);
+    const getGsc = async (page) => {
+        const res = await request(`${_apiBase}gsc?page=${page}`);
         return res.data.map(_transformData)
     }
     

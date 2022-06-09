@@ -20,6 +20,7 @@ import './gsc.scss';
 export default function Gsc() {
 
     const [id, setId] = useState('');
+    const [page, setPage] = useState(0);
     const [gscList, setGscList] = useState([]);
     const [gsc, setGsc] = useState([]);
     const [newItemLoading, setNewItemLoading] = useState(false);
@@ -34,8 +35,9 @@ export default function Gsc() {
 
     const onRequest = (initial) => {
         initial ? setNewItemLoading(false) : setNewItemLoading(true);
-        getGsc()
+        getGsc(page)
             .then(onGscListLoaded)
+            .then(() => setPage(page + 1))
             .then(() => setProcess('confirmed'))
             .then(() => setHandle(true));
     }

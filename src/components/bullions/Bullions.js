@@ -21,6 +21,7 @@ import copyImgDone from '../../icons/copyDone.svg';
 export default function Bullions() {
 
     const [id, setId] = useState('');
+    const [page, setPage] = useState(0);
     const [bullionsList, setBullionsList] = useState([]);
     const [bullion, setBullion] = useState([]);
     const [newItemLoading, setNewItemLoading] = useState(false);
@@ -36,8 +37,9 @@ export default function Bullions() {
 
     const onRequest = (initial) => {
         initial ? setNewItemLoading(false) : setNewItemLoading(true);
-        getBullions()
+        getBullions(page)
             .then(onBullionsListLoaded)
+            .then(() => setPage(page + 1))
             .then(() => setProcess('confirmed'))
     }
 
